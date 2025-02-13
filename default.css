@@ -110,8 +110,8 @@ a:hover {
 
 /* Navbar Example */
 .navbar {
-    background-color: var(--base);
-    padding: 10px 20px;
+    background-color: var(--crust);
+    padding: 10px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -158,4 +158,96 @@ a:hover {
 
 .purple-accent-section p {
     color: var(--crust);
+}
+
+/* Basic styling for the dropdown */
+.language-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: var(--mantle);
+    color: var(--mauve); /* Change the globe symbol color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*TODO: Add icon switching depanding on language and show globe icon only when hovering */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--surface0);
+    min-width: 72.95px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-content a {
+    color: var(--subtext);
+    padding: 12px 16px;
+    margin: 0;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24;
+
+}
+
+.dropdown-content a:hover {
+    background-color: var(--base);
+}
+
+.language-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.language-dropdown:hover .dropbtn {
+    color: var(--mauve);
+}
+
+.name_navbar {
+    padding: 10px 10px;
+}
+
+.name_navbar h1 {
+    color: var(--text);
+    font-size: 60px;
+    margin : 0;
+}
+
+.nav_button {
+    background-color: var(--crust);
+    color: var(--subtext);
+    padding: 30px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 20px;
+}
+
+.nav_button:hover {
+    color: var(--mauve);
+}
+
+.nav_button-secondary {
+    background-color: var(--surface0);
+    color: var(--text);
+    border: 1px solid var(--mauve);
+}
+
+.nav_button-secondary:hover {
+    background-color: var(--surface1);
 }
